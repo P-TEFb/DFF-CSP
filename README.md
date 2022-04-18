@@ -35,7 +35,7 @@ minimum average read length: The desired minimum average read length (an integer
 			   fragments. We observed CCs tend to have an avearage read length of
 			   atleast 30nt.
 
-maximum fragment size:     This parameter (an integer) allows exclusion of excessively long PRO-Seq
+maximum fragment size:     This parameter (an integer) allows exclusion of excessively long
                            reads. 
 
 chromosome sizes file:     DFF-CSP-I requires a chromosome sizes file. This file can be obtained
@@ -44,4 +44,4 @@ chromosome sizes file:     DFF-CSP-I requires a chromosome sizes file. This file
 ```
 
 ### Output:
-The final output is a comprehensive tab-delimited text file which contains information about both FW and RV strand non-overlapping CC boundaries, sum of CC read lengths, # of CC fragment centers, strand, the avg CC position.
+The final output is a comprehensive tab-delimited text file which contains information about non-overlapping CC boundaries, sum of CC read lengths, # of CC fragment centers, strand, the avg CC position.
