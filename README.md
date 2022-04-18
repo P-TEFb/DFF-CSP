@@ -12,7 +12,7 @@ Both DFF-CSP and DFF-CSP-I are intended to be run via a Python v2.7+ interpreter
 ```
 python DFF-CSP-I <mapped-fragment-centers.bed file> <CC window size> <CC read depth> <minimum average read length> <maximum fragment size> <chromosome sizes file>
 
-Example run: python DFF-CSP-I mapped-fragment-centers.bed 20 10 1 50 hg38.chrom.sizes.txt
+Example run: python DFF-CSP-I mapped-fragment-centers.bed 8 20 hg38.chrom.sizes.txt
 
 ```
 Maintain the program files under the DFF-CSP-I_dir folder.
@@ -29,14 +29,6 @@ CC window size:           A desired size of the CC window (an integer). We found
 CC read depth:            The minimum amount of fragment centers per CC (an integer). This determination of
                            this parameter can vary depending on sequencing depth and the amount of
 			   background signal in your dataset.
-
-minimum average read length: The desired minimum average read length (an integer) allows elimination
-                           of CCs formed exclusively by sequencing artifacts and hard to map
-			   fragments. We observed CCs tend to have an avearage read length of
-			   atleast 30nt.
-
-maximum fragment size:     This parameter (an integer) allows exclusion of excessively long
-                           reads. 
 
 chromosome sizes file:     DFF-CSP-I requires a chromosome sizes file. This file can be obtained
                            using [fetchChromSizes](http://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/)
