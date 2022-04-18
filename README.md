@@ -4,13 +4,13 @@ DFF-CSP identifies center cluster regions (CCs) from DFF-ChIP sequencing dataset
 Author: Mrutyunjaya Parida, David Price Lab, UIOWA
 
 ## Usage:
-DFF-ChIP-Seq Peak (DFF-CSP) runs on Python v2.7+. The DFF-CSP evaluates every CC window across the genome for the sum of fragment centers and the average read length. DFF-CSP-I is an interface program that runs the DFF-CSP program. It checks for errors in a user's input. If errors are found the DFF-CSP-I program displays the usage example and parameter description prior to exiting the run. 
-If no use input errors are found DFF-CSP-I runs DFF-CSP program automatically.
+DFF-ChIP-Seq Peak (DFF-CSP) runs on Python v2.7+. The DFF-CSP evaluates every CC window across the genome for the sum of fragment centers and the average read length. DFF-CSP-I.py is an interface program that runs the DFF-CSP.py program. It checks for errors in a user's input. If errors are found the DFF-CSP-I.py program displays the usage example and parameter description prior to exiting the run. 
+If no use input errors are found DFF-CSP-I.py runs DFF-CSP.py program automatically.
 
-Both DFF-CSP and DFF-CSP-I are intended to be run via a Python v2.7+ interpreter installed on your desired operating system of choice such as Windows, Mac or Linux. Additionally, DFF-CSP-I requires the joblib python module installed prior to the DFF-CSP run. If the module is missing DFF-CSP-I will guide you on installing the module. Finally, DFF-CSP-I expects the following syntax on a linux command-line interface:
+Both DFF-CSP.py and DFF-CSP-I.py are intended to be run via a Python v2.7+ interpreter installed on your desired operating system of choice such as Windows, Mac or Linux. Additionally, DFF-CSP-I.py requires the joblib python module installed prior to the DFF-CSP.py run. If the module is missing DFF-CSP-I.py will guide you on installing the module. Finally, DFF-CSP-I.py expects the following syntax on a linux command-line interface:
 
 ```
-python DFF-CSP-I <mapped-fragment-centers.bed file> <CC window size> <CC read depth> <chromosome sizes file>
+python DFF-CSP-I.py <mapped-fragment-centers.bed file> <CC window size> <CC read depth> <chromosome sizes file>
 
 Example run: python DFF-CSP-I mapped-fragment-centers.bed 8 10 KF297339.1.chrom.sizes.txt
 
