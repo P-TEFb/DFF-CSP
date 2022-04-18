@@ -10,7 +10,7 @@ If no use input errors are found DFF-CSP-I runs DFF-CSP program automatically.
 Both DFF-CSP and DFF-CSP-I are intended to be run via a Python v2.7+ interpreter installed on your desired operating system of choice such as Windows, Mac or Linux. Additionally, DFF-CSP-I requires the joblib python module installed prior to the DFF-CSP run. If the module is missing DFF-CSP-I will guide you on installing the module. Finally, DFF-CSP-I expects the following syntax on a linux command-line interface:
 
 ```
-python DFF-CSP-I <mapped-fragment-centers.bed file> <CC window size> <CC read depth> <minimum average read length> <maximum fragment size> <chromosome sizes file>
+python DFF-CSP-I <mapped-fragment-centers.bed file> <CC window size> <CC read depth> <chromosome sizes file>
 
 Example run: python DFF-CSP-I mapped-fragment-centers.bed 8 20 hg38.chrom.sizes.txt
 
