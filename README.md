@@ -12,7 +12,7 @@ Both DFF-CSP and DFF-CSP-I are intended to be run via a Python v2.7+ interpreter
 ```
 python DFF-CSP-I <mapped-fragment-centers.bed file> <CC window size> <CC read depth> <chromosome sizes file>
 
-Example run: python DFF-CSP-I mapped-fragment-centers.bed 8 20 hg38.chrom.sizes.txt
+Example run: python DFF-CSP-I mapped-fragment-centers.bed 8 10 KF297339.1.chrom.sizes.txt
 
 ```
 Maintain the program files under the DFF-CSP-I_dir folder.
